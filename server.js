@@ -3,7 +3,7 @@ const PORT = precess.env.PORT || 8080;
 const app = express ();
 
 const routes = require("./routes");
-//models for sequalize
+//models for sequelize
 const db = require("./models");
 
 //middleware for express
