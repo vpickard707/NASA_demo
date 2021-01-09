@@ -1,22 +1,61 @@
 <!DOCTYPE html>
-<!-- I used this template since Chris used another plus bootstrap etc -->
-<html lang="en">
-<meta charset="UTF-8">
-<title>Page Title</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="">
-<style>
-</style>
-<script src=""></script>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Space pics!</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+</head>
+
 <body>
 
-<img src="img_la.jpg" alt="LA" style="width:100%">
+  <div class="jumbotron">
+    <h1 class="text-center">NASA PIC OF THE DAY DISCUSSION!</h1>
+  </div>
 
-<div class="">
- <h1>This is a Heading</h1>
- <p>This is a paragraph.</p>
- <p>This is another paragraph.</p>
-</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <p id="apod-title" class="cool-font">APOD:</p>
+        <img id="apod-image"src="https://designshack.net/wp-content/uploads/placeholder-image.png" alt="Astronomy Picture of the Day">
+        <div id="apod-detail"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <p class="cool-font">User Name:</p>
+        <input class="form-control" type="text" id="title" placeholder="Enter Your Name">
+        <br>
+        <p class="cool-font">Comment:</p>
+        <textarea class="form-control" rows="3" id="comment-box" placeholder="Enter your comment"></textarea>
+        <button id="comment-submit" class="btn btn-lg pull-right">Submit!</button>
+      </div>
+    </div>
 
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">
+        <h2>DISCUSSION</h2>
+        <hr>
+        <div id="comment-area"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="./assets/js/logic.js"></script>
 </body>
+
 </html>
+© 2021 GitHub, Inc.
